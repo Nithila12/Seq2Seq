@@ -16,9 +16,9 @@ output_features:
         level: word
         decoder: generator
         cell_type: lstm
-        attention: loung
+        attention: bahdanau
         loss:
-            type: sampled_softmax_cross_entropy
+            type: softmax_cross_entropy
         preprocessing:
           word_format: english_tokenize
 
